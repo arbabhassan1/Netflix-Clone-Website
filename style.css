@@ -1,37 +1,56 @@
-*{
-    margin : 0;
+* {
+    margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
-body
-{
+
+body {
     background: black;
     color: white;
 }
-.header{
+
+.header {
     inline-size: 100%;
     block-size: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(images/netflix.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/netflix.jpg);
     background-size: cover;
     background-position: center;
     padding: 10px 8%;
-    position: relative
+    position: relative;
+    background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/42df4e1f-bef6-499e-87ff-c990584de314/240cc337-bea7-47c1-a68f-9bbd9cbfc4e7/PK-en-20230904-popsignuptwoweeks-perspective_alpha_website_medium.jpg");
 }
-nav{
+#header-colour{
+    position: absolute;
+    top: 0;
+    left: 0;
+     background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    z-index: 111;
+}
+
+nav {
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    /* z-index: 222; */
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px;
 }
-.logo{
-     inline-size: 150px;    /*  width */
+
+.logo {
+    inline-size: 150px;
+    /*  width */
     cursor: pointer;
 }
-nav button{
+
+nav button {
     border: 0;
     outline: 0;
-    background:#db0001;
+    background: #db0001;
     color: #fff;
     padding: 7px 20px;
     font-size: 12px;
@@ -39,52 +58,59 @@ nav button{
     margin-inline-start: 10px;
     cursor: pointer;
 }
-.language-btn{
+
+.language-btn {
     display: inline-flex;
     align-items: center;
     background: transparent;
     border: 1px solid white;
-    padding: 7px 10px ;
+    padding: 7px 10px;
 
 }
-.language-btn img{
+
+.language-btn img {
     inline-size: 10px;
     margin-inline-start: 10px;
 }
-.header-content
-{
-     position: absolute;
-     top: 50%;
-     left: 50%;
-     transform: translate(-50%,-50%);
-     text-align: center;
-     margin-top: 100px;
+
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: 100px;
 }
-.header-content h1{
+
+.header-content h1 {
     font-size: 60px;
-    line-height:  70px; 
+    line-height: 70px;
     font-weight: 600;
     max-width: 650px;
 }
-.header-content h3{
+
+.header-content h3 {
     font-weight: 400;
     margin-bottom: 20px;
 }
-.email-signup{
+
+.email-signup {
     background-color: #fff;
     border-radius: 4px;
     display: flex;
     align-items: center;
     margin-top: 30px;
-    overflow:hidden ;  
+    overflow: hidden;
 }
-.email-signup input{
+
+.email-signup input {
     flex: 1;
     border: 0;
     outline: 0;
-    margin-left:20px;
+    margin-left: 20px;
 }
-.email-signup button{
+
+.email-signup button {
     height: 50px;
     width: 50px;
     background-color: #db0001;
@@ -93,30 +119,84 @@ nav button{
     color: white;
     font-size: 16px;
     cursor: pointer;
-    padding:15px , 30px ;
+    padding: 20px, 30px;
     width: 100px;
 }
-.features{
-    padding: 50px 12%;
+.email-signup button:hover{
+    background-color: #C11119;
+}
+.features {
+    padding: 70px 8%;
     font-size: 22px;
 }
-.row{
+
+.row {
     display: flex;
     width: 100%;
     align-items: center;
-    flex-wrap: wrap;
-    padding: 50px 0;
+    /* padding: 30px 0; */
+    justify-content: space-between;
+    gap: 30px;
 }
-.text-col{
-    flex-basis: 50%;
-    margin-bottom: 20px;
-}
-.img-col{
-    flex-basis: 50%;
-    margin-bottom: 20px;
-}
-.img-col img{
+
+
+
+
+.img-col img {
     display: block;
     width: 90%;
     margin: auto;
+}
+.space{
+    width: 100%;
+    height: 10px;
+    background-color: #232323;
+}
+.vid{
+    border-radius: 5px;
+}
+nav{
+    padding: 0px 30px;
+}
+.features-last{
+    padding: 70px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.main-text{
+    font-size: 50px;
+    font-weight: 700;
+}
+.sub-b{
+    background-color: #2D2D2D;
+    width: 100%;
+    padding: 20PX;
+    font-size: 28px;
+    font-weight: 400;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+.box{
+    padding: 50px 0;
+width: 100%;
+}
+.sub-b:hover{
+    background-color: #414141;
+}
+.rights{
+padding: 50px 8%;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+.rights a{
+    color: #db0001;
+    text-decoration: none;
+    font-weight: 500;
+}
+.rights a:hover{
+    color: #C11119;
 }

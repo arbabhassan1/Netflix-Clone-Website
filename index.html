@@ -1,39 +1,138 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Netflix Website Clone - Personal project </title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Resources/IMG/icon.png" type="image/x-icon">
 </head>
+
 <body>
     <div class="header">
-         <nav>
-            <img src="images/logo.png" class="logo">
-            <div>
-                <button class="language-btn">English <img src="images/down-icon.png"></button>
-                <button>Sign In</button>
+        <div id="header-colour">
+            <nav>
+                <img src="Resources/IMG/logo.svg" class="logo">
+                <div>
+                    <!-- <button class="language-btn">English <img src="images/down-icon.png"></button> -->
+                    <button>Sign In</button>
+                </div>
+            </nav>
+            <div class="header-content">
+                <h1>Unlimited movies, TV shows and more.</h1>
+                <h3>Watch Anywhere. Cancel anytime.</h3>
+                <p>Ready to watch? Enter your email to create or restart your membership.</p>
+                <form class="email-signup">
+                    <input type="email" placeholder="Email Address" required>
+                    <button type="submit"> Get Started</button>
+                </form>
             </div>
-         </nav>
-         <div class="header-content">
-            <h1>Unlimited movies, TV shows and more.</h1>
-            <h3>Watch Anywhere. Cancel anytime.</h3>
-            <p>Ready to watch? Enter your email to create or restart your membership.</p>
-             <form class="email-signup">
-                <input type="email" placeholder ="Email Address" required>
-                <button type="submit"> Get Started</button>
-             </form>
         </div>
     </div>
+    <div class="space">
+
+    </div>
     <div class="features">
-        <div class="row" >
+        <div class="row">
             <div class="text-col">
                 <h2> Enjoy on your TV. </h2>
                 <p>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
             </div>
             <div class="img-col">
-                <img src="images/feature-1.png">
+                <div class="vid">
+
+                    <video src="Resources/VIDEO/video-1.m4v" autoplay loop ></video>
+                </div>
+
             </div>
         </div>
     </div>
+
+    <div class="space">
+
+    </div>
+
+
+    <div class="features">
+        <div class="row">
+
+            <div class="img-col">
+                <div class="vid">
+                    <img src="Resources/IMG/mobile.jpg" alt="">
+                </div>
+
+            </div>
+            <div class="text-col">
+                <h2> Download your shows to watch offline </h2>
+                <p>Download your shows to watch offline</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="space">
+
+    </div>
+
+    <div class="features">
+        <div class="row">
+
+            <div class="img-col">
+                <div class="vid">
+                    <img src="Resources/IMG/kids.png" alt="">
+                </div>
+
+            </div>
+            <div class="text-col" style="width: 50%;">
+                <h2 style="font-size: 45px;"> Create profiles for kids </h2>
+                <p>Send kids on adventures with their favorite characters in a space made just for them—free with your
+                    membership.</p>
+            </div>
+        </div>
+    </div>
+    <div class="space">
+
+    </div>
+
+    <div class="features-last">
+        <div class="main-text">
+            Frequently Asked Questions
+        </div>
+        <div class="box">
+            <div class="sub-b">
+                What is Netflix?
+            </div>
+            <div class="sub-b">
+                How much Netflix does Cost?
+            </div>
+            <div class="sub-b">
+                Where can I watch? </div>
+            <div class="sub-b">
+                How do I cancel
+            </div>
+            <div class="sub-b">
+                Is Netflix good for kids?
+            </div>
+        </div>
+
+        <div class="box-2">
+            <h3 style="font-size: 25px; font-weight: 400;">Ready to watch? Enter your email to create or restart your
+                membership.</h3>
+            <form class="email-signup">
+                <input type="email" placeholder="Email Address" required>
+                <button type="submit"> Get Started</button>
+            </form>
+        </div>
+    </div>
+    <div class="space">
+
+    </div>
+
+    <div class="rights">
+        <p>A Front-End Project by <a href="https://github.com/arbabhassan1" target="_blank">Arbab Hassan </a> & <a
+                href="https://github.com/Shameerminhas1" target="_blank">Shameer Azhar</a></p>
+
+    </div>
+
 </body>
+
 </html>
